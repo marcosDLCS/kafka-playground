@@ -10,9 +10,8 @@
     <version>1.0</version>
     <modules>
         <module>kafka-basics</module>
-        <module>kafka-twitter</module>
+        <module>kafka-producer-twitter</module>
         <module>kafka-consumer-elasticsearch</module>
-        <module>kafka-connectors</module>
         <module>kafka-streams-twitter-filter</module>
         <module>kafka-producer-wikimedia</module>
         <module>kafka-consumer-opensearch</module>
