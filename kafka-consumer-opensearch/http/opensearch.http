@@ -1,0 +1,31 @@
+### Create index
+
+PUT http://localhost:9200/my-first-index
+
+### Get index
+
+GET http://localhost:9200/my-first-index
+
+### Add document
+
+PUT http://localhost:9200/my-first-index/_doc/1
+Content-Type: application/json
+
+{
+  "key": "value"
+}
+
+### Get document
+
+GET http://localhost:9200/my-first-index/_doc/1
+
+### Delete document
+
+DELETE http://localhost:9200/my-first-index/_doc/1
+
+### Delete index
+
+DELETE http://localhost:9200/my-first-index
+
+
+

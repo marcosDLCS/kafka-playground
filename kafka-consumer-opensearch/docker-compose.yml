@@ -1,0 +1,25 @@
+version: '3.8'
+services:
+  opensearch:
+    image: opensearchproject/opensearch:1.3.0
+    container_name: opensearch
+    environment:
+      - discovery.type=single-node
+      - plugins.security.disabled=true
+      - compatibility.override_main_response_version=true
+    ports:
+      - "9200:9200"
+      - "9600:9600" # required for Performance Analyzer
+
+  opensearch-dashboards:
+    image: opensearchproject/opensearch-dashboards:1.3.0
+    container_name: opensearch-dashboards
+    ports:
+      - "5601:5601"
+    expose:
+      - "5601"
+    environment:
+      OPENSEARCH_HOSTS: '["http://opensearch:9200"]' # must be a string with no spaces when specified as an environment variable
+      DISABLE_SECURITY_DASHBOARDS_PLUGIN: "true"
+    depends_on:
+      - opensearch

@@ -1,9 +1,13 @@
 # kafka-basics
 
-Code form **Udemy** course:
+Code from **Udemy** course:
 
 **Apache Kafka Series - Learn Apache Kafka for Beginners v3
 **
 
 https://www.udemy.com/course/apache-kafka/
+
+Course certificate:
+
+https://www.udemy.com/certificate/UC-39149bf2-eea5-4623-b3b3-2b3c149de5f6/
 
