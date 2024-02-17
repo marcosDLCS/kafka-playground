@@ -1,4 +1,4 @@
-# kafka-basics
+# kafka-playground
 
 Code from **Udemy** course:
 
